@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.progressBarTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateProgressBar", userInfo: nil, repeats: true)
+        self.progressBarTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.updateProgressBar), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
